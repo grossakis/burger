@@ -1,0 +1,39 @@
+h1{
+    text-align: center
+}
+.eaten-burgers{
+    color: rgb(175, 175, 175)
+}
+
+button{
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+#burgers2eatdiv{
+    display: inline-block;
+    width: 40%;
+    float: left
+}
+
+#burgerseatendiv{
+    display: inline-block;
+    width: 40%;
+    float: right
+}
+
+#form-head{
+    clear: both;
+}
+
+#form-div{
+    margin: auto;
+    width: 50%;
+}
+
+#burger-lists{
+    width: 90%;
+    margin: auto
+}
