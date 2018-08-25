@@ -1,11 +1,23 @@
 var mysql      = require('mysql');
-var connection = mysql.createConnection({
+
+var jawsUrl = process.env.JAWSDB_MARIA_URL;
+var local = {
   host     : 'localhost',
   port     : 3306,
   user     : 'root',
   password : 'password',
   database : 'burgers_db'
-});
+};
+
+var connection;
+if(typeof jawsUrl !== 'undefined' && jawsUrl.length() > 0){
+  connection = mysql.createConnection(jawsUrl);
+}
+else{
+  connection = mysql.createConnection(local);
+}
+ 
+
 
 // Make connection.
 connection.connect(function(err) {
