@@ -10,7 +10,7 @@ var local = {
 };
 
 var connection;
-if(typeof jawsUrl !== 'undefined' && jawsUrl.length() > 0){
+if(typeof jawsUrl !== 'undefined'){
   connection = mysql.createConnection(jawsUrl);
 }
 else{
